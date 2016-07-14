@@ -15,7 +15,7 @@ echo '--------------------------------------------------'
 sudo apt-get -y install python-pip
 sudo apt-get -y install build-essential python-dev python-setuptools \
                      python-numpy python-scipy \
-                     libatlas-dev libatlas3gf-base python-matplotlib
+                     libatlas-dev libatlas3gf-base python-matplotlib python-pandas
 
 pip install --upgrade pip
 pip install -U numpy scipy scikit-learn flask nltk networkx jupyter gensim
