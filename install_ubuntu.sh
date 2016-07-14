@@ -40,16 +40,8 @@ echo '		Configuring stuff 			'
 echo '--------------------------------------------------'
 
 jupyter notebook --generate-config -y
-sudo bash -c 'echo "c.NotebookApp.ip = \"*\"" > ./.jupyter/jupyter_notebook_config.py'
-sudo bash -c 'echo "c.NotebookApp.open_browser = False" >> ./.jupyter/jupyter_notebook_config.py'
-
-
-sudo bash -c 'echo "start on startup" > ./.config/upstart/jupyter_task.conf'
-sudo bash -c 'echo "task" >> ./.config/upstart/jupyter_task.conf'
-sudo bash -c 'echo "exec jupyter notebook" >> ./.config/upstart/jupyter_task.conf'
-
-
-start jupyter_task
+sudo bash -c 'echo "c.NotebookApp.ip = \"*\"" > ~/.jupyter/jupyter_notebook_config.py'
+sudo bash -c 'echo "c.NotebookApp.open_browser = False" >> ~/.jupyter/jupyter_notebook_config.py'
 
 echo ''
 echo ''
